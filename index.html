@@ -3,9 +3,16 @@
 	<head>
 		<title>Let's Watch a Video!</title>
 		<link rel="stylesheet" href="css/style.css">
-		<link href='https://fonts.googleapis.com/css?family=Cinzel:400,900|Josefin+Sans:400,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/script.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".fancybox").fancybox();
+			});
+		</script>
 	</head>
 	<body>
 		<div id="container">
@@ -16,7 +23,7 @@
 			<section>
 				<form id="search-form" name="search-form" onsubmit="return search()">
 					<div class="fieldcontainer">
-						<input type="search" id="query" class="search-field" placeholder="Search YouTube...">
+						<input type="search" id="searchVideo" class="search-field" placeholder="Search YouTube...">
 						<input type="submit" name="search-btn" id="search-btn" value="">
 					</div>
 				</form>
